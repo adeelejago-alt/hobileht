@@ -9,11 +9,11 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-dark bg-dark">
+    <header> 
+      <nav class="navbar sticky-top navbar-dark bg-dark ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="assets/logo svg.png" alt="hobulogo" />
+            <img src="assets/logosvg.png" alt="hobulogo" />
             HobuLeht
           </a>
         </div>
@@ -25,8 +25,8 @@
           <div class="row">
             <div class="col-lg-12">
               <h1>RATSASPORT</h1>
-              <p>kaks partnerit, kes ei raagi ühte keelt</p>
-              <a href="#" class="btn btn-primary btn-pill">Uuri Lähemalt</a>
+              <p>kaks partnerit, kes ei räägi ühte keelt</p>
+              <a href="#alad" class="btn btn-primary btn-pill shadow">UURI LÄHEMALT</a>
             </div>
           </div>
         </div>
@@ -36,45 +36,45 @@
 
     <main>
 
-      <section class="py-5">
+      <section id="alad" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-3 pb-5">RATSASPORDIALAD</h2>
+      <h2 class="text-center fw-bold mb-3 pb-5">RATSASPORDIALAD</h2>
         <div class="row">
-            <div class="col-md-3 col-6 mb-4">
-                <div class="card h-100">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 shadow">
                     <div class="card-body text-center">
-                        <a class="feature-icon" href="#">
+                        <a class="feature-icon img-fluid w-100" href="#">
                           <img src="assets/takistussoit.png" alt="takistussoit">
                          </a>
                         <h3 class="card-title">Takistussoit</h3>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6 mb-4">
-                <div class="card h-100">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 shadow">
                     <div class="card-body text-center">
                         <a class="feature-icon" href="#">
-                          <a class="feature-icon" href="#">
+                          <a class="feature-icon img-fluid w-100" href="#">
                             <img src="assets/koolisoit.png" alt="koolisoit">
                           </a>
                         <h3 class="card-title">Koolisoit</h3>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6 mb-4">
-                <div class="card h-100">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 shadow">
                     <div class="card-body text-center">
-                        <a href="feature-icon" href="#">
+                        <a class="feature-icon img-fluid w-100" href="#">
                           <img src="assets/kolmevoistlus.png" alt="kolmevoistlus">
                         </a>
                         <h3 class="card-title">Kolmevoistlus</h3>
                     </div>
                 </div>
             </div>
-             <div class="col-md-3 col-6 mb-4">
-                <div class="card h-100">
+             <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 shadow">
                     <div class="card-body text-center">
-                        <a href="feature-icon item" href="#">
+                        <a class="feature-icon img-fluid w-100" href="#">
                           <img src="assets/kestvusrats.png" alt="kestvusratsutamine">
                         </a>
                         <h3 class="card-title">Kestvusratsutamine</h3>
@@ -85,14 +85,60 @@
     </div>
 </section>
  
-<section class="information-section d-flex align-items-center">
-        <video autoplay muted loop id="myVideo">
-            <source src="assets/video1.mp4" type="video/mp4">
-        </video>
-        <div class="container position-absolute mx-5 px-5" data-aos="fade-up" data-aos-delay="500">
-            <p class="col-md-3 col-6 mb-4 text-white text-center">Ratsutamine on rohkem kui lihtsalt sport – see on koostöö inimese ja hobuse vahel. See ühendab füüsilise liikumise, keskendumise ja usalduse, luues erilise sideme, mida sõnades on raske edasi anda. Ratsutamine arendab tasakaalu, enesekindlust ja rahulikkust, pakkudes samas võimalust nautida loodust ja liikumisrõõmu.</p>
+<section class="video-section d-flex align-items-center">
+    <video autoplay muted loop play inline id="bgVideo">
+        <source src="assets/video1.mp4" type="video/mp4">
+    </video>
+
+    <div class="container text-overlay" data-aos="fade-up" data-aos-delay="500">
+        <p class="text-white text-center">
+            Ratsutamine on rohkem kui lihtsalt sport – see on koostöö inimese ja hobuse vahel. See ühendab füüsilise liikumise, keskendumise ja usalduse, luues erilise sideme, mida sõnades on raske edasi anda. Ratsutamine arendab tasakaalu, enesekindlust ja rahulikkust, pakkudes samas võimalust nautida loodust ja liikumisrõõmu.
+        </p>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5 pb-5 fw-bold">UUDISED</h2>
+            <div class="row py-5">
+                <div class="col-lg-6">
+                    <img src="assets/uudis.png" class="img-fluid rounded shadow" alt="uudis">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">TALLINN INTERNATIONAL HORSE SHOW 2025 SIX BAR</h2>
+                    <p class="lead text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit.</p>
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col-lg-6 ">
+                    <h2 class="fw-bold mb-4">TALLINN INTERNATIONAL HORSE SHOW 2025 SIX BAR</h2>
+                    <p class="lead text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit.</p>
+                </div>
+                 <div class="col-lg-6  d-flex justify-content-center">
+                    <img src="assets/uudis2.png" class="img-fluid rounded shadow" alt="uudis">
+                </div>
+            </div>
         </div>
     </section>
+
+<section class="treener-section text-white py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+        <img src="assets/treener.png" class="img-fluid rounded" alt="Treener">
+      </div>
+
+      <div class="col-lg-6">
+        <h2 class="display-4 fw-bold mb-4">LEIA ENDALE SOBIV TREENER</h2>
+        <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+        <button class="btn btn-primary btn-lg btn-pill px-4 me-2">SPORDIREGISTER</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
 

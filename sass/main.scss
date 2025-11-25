@@ -3,7 +3,7 @@
 
 
 .hero-section {
-    background-image: url('../assets/hero image.png');
+    background-image: url('../assets/heroimage.png');
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -49,4 +49,44 @@
 .feature-description {
     font-size: 1rem;
 }
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* full height */
+    overflow: hidden;
+    display: flex;            
+    align-items: center;   
 
+}
+
+
+#bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* fill entire screen */
+    z-index: -1;  /* behind content */
+    min-width: 100% !important;
+    min-height: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 2; /* ensure text is on top */
+}
+
+.video-section {
+    min-height: 100vh !important;
+    height: 100vh !important;
+}
+
+
+.treener-section {
+    background: black;
+    min-height: 500px;
+}
