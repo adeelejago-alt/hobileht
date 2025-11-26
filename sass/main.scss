@@ -1,6 +1,27 @@
+$primary: #FE7743;
+$light: #EFEEEA;
+$secondary: #EEC170;
+$info: #EEC170;
+$dark: #273F4F;
+
+
+
+
+// import the functions & variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+// custom theme colours
+$custom-theme-colors: (
+  "altlight": #f2ebfa,
+  "altdark": #522192
+);
+
+// merge the maps to add new theme colors
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+
 @import '../node_modules/bootstrap/scss/bootstrap';
-
-
 
 .hero-section {
     background-image: url('../assets/heroimage.png');
@@ -15,7 +36,7 @@
 .hero-section h1 {
     padding-top: 100px;
     padding-bottom: 1rem;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -90,3 +111,18 @@
     background: black;
     min-height: 500px;
 }
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 3rem 0;
+  }
+
+  .social-icons a {
+    font-size: 1.25rem;
+  }
