@@ -33,8 +33,44 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     min-height: 70vh;
 }
 
+.hero-section-takistus{
+    background-image: url('../assets/takistus.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    min-height: 70vh;
+}
+
+.hero-section-kooli{
+    background-image: url('../assets/kooli.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    min-height: 70vh;
+}
+
+
+
 .hero-section h1 {
     padding-top: 100px;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section-takistus h1 {
+    padding-top: 250px;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section-kooli h1 {
+    padding-top: 300px;
     padding-bottom: 1rem;
     font-size: 3rem;
     font-weight: bold;
@@ -52,8 +88,11 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 .feature-box {
     padding: 30px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
     margin-bottom: 30px;
+}
+
+.card-body:hover{
+    transform: scale(1.1);
 }
 
 .feature-icon {
@@ -101,10 +140,13 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     z-index: 2; /* ensure text is on top */
 }
 
+
+
 .video-section {
     min-height: 100vh !important;
     height: 100vh !important;
 }
+
 
 
 .treener-section {
